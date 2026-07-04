@@ -29,6 +29,16 @@
   "installUrl": "https://apps.apple.com/app/apple-store/id6780591405",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": { "@type": "Organization", "name": "Kannacorp", "url": "https://kannacorp.github.io" }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "sr",
+  "mainEntity": [
+    {"@type":"Question","name":"Да ли је апликација Свето Писмо бесплатна?","acceptedAnswer":{"@type":"Answer","text":"Да. Бесплатна је и садржи цео Стари и Нови завет (превод Даничић–Караџић), уз дневни стих, белешке и читање без интернета."}},
+    {"@type":"Question","name":"Који је превод у питању?","acceptedAnswer":{"@type":"Answer","text":"Стари завет у преводу Ђуре Даничића и Нови завет у преводу Вука Стефановића Караџића."}},
+    {"@type":"Question","name":"Ради ли без интернета?","acceptedAnswer":{"@type":"Answer","text":"Да, основно читање ради офлајн. Тумачење стихова захтева интернет везу."}},
+    {"@type":"Question","name":"Шта ради опција тумачења?","acceptedAnswer":{"@type":"Answer","text":"Додиром на стих добијате историјски и духовни контекст, попут белешки. То је помоћ, а не замена за молитву, Цркву или духовника."}},
+    {"@type":"Question","name":"За које уређаје је доступна?","acceptedAnswer":{"@type":"Answer","text":"Доступна је за iPhone на App Store-у."}}
+  ]
 }
 </script>
 
@@ -140,6 +150,18 @@
     .js .reveal{transition:none}
     .cta{transition:none}
   }
+  <style>
+  .faq{padding:74px 0}
+  .faq .wrap{max-width:760px}
+  .faq h2{font-family:var(--serif);font-size:clamp(1.7rem,4.6vw,2.4rem);font-weight:500;text-align:center;margin-bottom:36px}
+  .faq details{border-top:1px solid var(--line);padding:20px 0}
+  .faq details:last-child{border-bottom:1px solid var(--line)}
+  .faq summary{font-family:var(--serif);font-size:1.2rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--accent);font-size:1.4rem;line-height:1}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{color:var(--ink-soft);margin-top:12px;line-height:1.7}
+</style>
 </style>
 </head>
 <body>
@@ -234,6 +256,17 @@
       </a>
     </div>
     <span class="cta-note">Преузми на App Store и на Google Play store.</span>
+  </div>
+</section>
+
+  <section class="faq">
+  <div class="wrap">
+    <h2>Честа питања</h2>
+    <details><summary>Да ли је апликација Свето Писмо бесплатна?</summary><p>Да. Апликација је бесплатна и садржи цео текст Старог и Новог завета у преводу Ђ. Даничића и Вука Ст. Караџића, уз дневни стих, белешке и читање без интернета.</p></details>
+    <details><summary>Који је превод у питању?</summary><p>Стари завет у преводу Ђуре Даничића и Нови завет у преводу Вука Стефановића Караџића — традиционални српски превод Светог писма.</p></details>
+    <details><summary>Ради ли без интернета?</summary><p>Да. Основно читање ради и офлајн, па је текст увек уз вас. Тумачење стихова захтева интернет везу.</p></details>
+    <details><summary>Шта ради опција тумачења?</summary><p>Додиром на стих или главу добијате историјски и духовни контекст — попут белешки уз текст. То је помоћ у разумевању, а не замена за молитву, Цркву или духовника. Свето писмо остаје меродавно.</p></details>
+    <details><summary>За које уређаје је доступна?</summary><p>Апликација је доступна за iPhone на App Store-у.</p></details>
   </div>
 </section>
 
